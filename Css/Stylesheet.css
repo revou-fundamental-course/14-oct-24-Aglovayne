@@ -56,7 +56,7 @@ header>nav>a:hover{
     display: flex;
     justify-content:flex-start;
     padding-top: 50px;
-    padding-left: 350px;
+    padding-left: 250px;
     padding-bottom: 50px;
 }
 
@@ -72,6 +72,22 @@ header>nav>a:hover{
     
 }
 
+.about-c-c-v{
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+#about-company{
+    font-size: 22px;
+    
+}
+
+#mission-vision{
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
 .monsters {
     height: 200px;
 }
@@ -80,4 +96,24 @@ article{
     display: flex;
     justify-content: space-evenly;
     text-align: center;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+button{
+    text-align: center;
+    font-size: 20px;
+    padding: 5px 169px;
+}
+
+#user-card{
+    width: 30%;
+    margin-top: 40px;
+    padding-left: 10px;
+    padding-top: 20px;
+    border: double 5px gold;
+    background-color: hsl(0, 0%, 17%);
 }
