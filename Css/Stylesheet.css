@@ -1,0 +1,83 @@
+body{
+    background-color: #111;
+    color: white;
+    font-family: "Marcellus SC", serif;
+}
+
+#navbar {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-site{
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    margin-left: 30px;
+    border: solid grey 3px;
+}
+
+header>nav{
+    margin-right: 50px;
+}
+
+header>nav>a{
+    text-decoration: none;
+    border: solid black 1px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: hsl(0, 8%, 3%);
+}
+header>nav>a:hover{
+    background-color: hsl(0, 0%, 10%);
+}
+
+.welcome{
+    margin-left: 60px;
+}
+
+#banner{
+    background-size: 1366px 578px;
+    background-position: center;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+#profile-section{
+    display: flex;
+    justify-content:flex-start;
+    padding-top: 50px;
+    padding-left: 350px;
+    padding-bottom: 50px;
+}
+
+#profile{
+    font-size: 20px;
+}
+
+#profile-photo{
+    border-radius: 50%;
+    background-size: cover;
+    height: 350px;
+    margin-right: 150px;
+    
+}
+
+.monsters {
+    height: 200px;
+}
+
+article{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
