@@ -1,0 +1,162 @@
+body{
+    font-size: 1.125rem;
+    font-family: "Marcellus SC", serif;
+    margin: 0;
+    color: white;
+    background-color: hsl(0, 0%, 7%);
+}
+
+/* Below is Header */
+
+header {
+    color: white;
+
+}
+
+/* Monster Hunter Logo */
+.header img{
+    height: 50px;
+    max-width: 100%;
+    width: 10%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: solid grey 3px;
+}
+
+.header h1 {
+    display: inline;
+    width: 75%;
+}
+
+.header {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+header nav{
+    border-top: white 1px solid;
+    border-bottom: white 1px solid;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li{
+    text-align: center;
+    width: 100%;
+    border-bottom: grey 1px solid;
+}
+
+nav li:last-child{
+    border-bottom: none;
+}
+
+nav li:hover {
+    background-color: hsl(0, 0%, 17%);
+    
+}
+
+/* Main section */
+/* Welcome Section */
+
+.welcome h1, p{
+    text-align: center;
+}
+
+.banner-container{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+.banner-container img{
+    width: 90%;
+}
+
+/* Profile Section */
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#profile-photo{
+    border-radius: 50%;
+    background-size: cover;
+    width: 60%;
+    
+}
+
+.profile-section h1{
+    order: -1;
+}
+
+#profile p{
+    text-align: left;
+}
+
+#profile p:first-child{
+    padding-top: 1em;
+}
+
+/* Company Vision & Mission */
+
+.vision-mission{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.vision-mission h1, p {
+    width: 90%;
+    padding: 0;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.vision-mission p{
+    font-size: 1rem;
+}
+
+/* monster */
+
+.collection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.collection h3{
+    text-align: center;
+}
+
+.monster-cage {
+    width: 40%;
+}
+
+.monsters img {
+    float: left;
+    object-fit: cover;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+/* User info */
+
