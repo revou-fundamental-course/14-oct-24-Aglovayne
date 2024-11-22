@@ -89,6 +89,39 @@
         </article>
     </section>
 
+    <hr>
+
+    <section id="Message-Us">
+        <form>
+            <h1>Message Us</h1>
+            <label for="user-name">Name:</label>
+            <input id="user-name" type="text">
+            <label for="user-date">Birth Date:</label>
+            <input id="user-date" type="date">
+            <label>Gender:</label>
+            <div>
+                <input name="gender" id="Male" type="radio" value="Male">
+                <label for="Male">Male</label>
+                <input name="gender" id="female" type="radio" value="Female">
+                <label for="female">Female</label>
+            </div>
+            <br>
+            <label>Message:</label><br>
+            <textarea id="messages" style="width: 100%; box-sizing: border-box;" rows="5" cols="50" required></textarea><br>
+            <button id="buttonX" type="button">Submit</button>
+        </form>
+
+
+        <div id="user-card">
+            <p>Current Time: <span id="currenttime"></span></p>
+
+            <p>Name: <span id="set-name"></span></p>
+            <p>Birth Date: <span id="set-birth"></span></p>
+            <p>Gender: <span id="set-gender"></span></p>
+            <p>Message: <span id="set-message"></span></p>
+        </div>
+    </section>
+
    </main>
 
    <footer></footer>
