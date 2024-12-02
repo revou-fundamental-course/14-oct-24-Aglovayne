@@ -8,7 +8,7 @@ body{
 
 hr {
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
 }
 
 /* Monster Hunter Logo */
@@ -68,7 +68,7 @@ nav li:hover {
 /* Main section */
 /* Welcome Section */
 
-.welcome h1, p{
+.welcome h1, .welcome p{
     text-align: center;
 }
 
@@ -102,6 +102,10 @@ nav li:hover {
     order: -1;
 }
 
+#profile h1{
+    display: none;
+}
+
 #profile p{
     text-align: left;
 }
@@ -116,19 +120,21 @@ nav li:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    
-}
-
-.vision-mission h1, p {
     width: 90%;
-    padding: 0;
-    text-align: center;
     margin-right: auto;
     margin-left: auto;
+    padding: 0;
+}
+
+.vision-mission h1, .vision-mission p {
+
+    text-align: center;
+
 }
 .vision-mission p{
     font-size: 1rem;
 }
+
 
 /* monster */
 
@@ -181,17 +187,155 @@ button{
 #user-card{
     width: 60%;
     margin: 2em auto;
-    
     border: double 5px gold;
     background-color: hsl(0, 0%, 17%);
 }
 
 #user-card p{
     text-align: left;
+    margin-left: 1em;
 }
 
 #user-card span {
     color: gold;
 }
 
+footer{
+    background-color: hsla(0, 0%, 50%, 0.664);
+    margin-top: 3em;
+    text-align: right;
+}
+
+footer p{
+    margin: 0;
+    padding: 8px;
+}
+/* Media query */
+
+/* Deskop Screen */
+
+@media (min-width: 900px){
+    .header1{
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid white;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    header nav{
+        border-top: initial;
+        border-bottom: initial;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        padding: initial;
+        margin: initial;
+        list-style: none;
+        gap: 1em;
+    }
+
+    nav li{
+        text-align: initial;
+        width: initial;
+        border: solid black 1px;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        background-color: hsl(0, 8%, 3%);
+    }
+
+    /* Main Section */
+
+    .welcome{
+        margin-left: 3em;
+    }
+
+    .welcome h1, .welcome p {
+        text-align: left;
+    }
+
+    .banner-container img{
+        width: 80%;
+    }
+    
+    /* Profile Section */
+
+    .profile-section {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom: 2em;
+        padding-top: 2em;
+    }
+
+    #profile-photo{
+        width: 30%;
+    }
+
+    .profile-section h1{
+        display: none;
+        order: initial;
+    }
+
+    #profile h1{
+        display: block;
+    }
+
+    /* Vision-mission */
+
+    .vision-mission{
+        width: 80%;
+        font-size: 1.5rem;
+    }
+    
+    .vision-mission h1,  .vision-mission p {
+        font-size: 1.5rem;
+    }
+    
+    /* Monster */
+
+    .collection{
+        flex-wrap: nowrap;
+    }
+
+    .monsters {
+        width:80%;
+        margin: 0 auto;
+    }
+
+    /* Form */
+
+    #Message-Us{
+        margin-top: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+    }
+
+    form {
+        width: 40%;
+    }
+    
+    #user-card{
+        width: 30%;
+        max-width: 30%;
+        margin: initial auto;
+       
+    }
+
+    #set-message{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        line-clamp: 7;
+        -webkit-box-orient: vertical;
+    }
+    
+    #user-card span {
+        color: gold;
+    }
+    
+}
 
